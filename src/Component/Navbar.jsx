@@ -4,17 +4,17 @@ import { Link } from 'react-scroll'
 
 export const Navbar = () => {
   return (
-    <div className='   border-b border-b-richblack-300'>
+    <div className=' sticky top-0 border-b border-b-richblack-300'>
         <div className='w-11/12 mx-auto max-w-maxContent flex flex-row justify-around items-center'>
-            <a href='/'>
+            <Link to='hero'  smooth={true} offset={-100} duration={150}>
              <img src={logo} className='h-[80px]'/>
-            </a>
+            </Link>
             <div className='flex flex-row items-center gap-x-6 text-richblack-5'>
-               <a href='/' className='font-inter text-xl font-medium'>Home</a>
-               <a href='#about' className='font-inter text-xl font-medium'>About</a>
-               <a href='#project' className='font-inter text-xl font-medium'>Project</a>
-               <a href='#skills' className='font-inter text-xl font-medium'>Skill</a>
-               <a href='#contact' className='font-inter text-xl font-medium'>Contact</a>
+               <Link to='hero' smooth={true} offset={-100} duration={150} className='font-inter text-xl font-medium'>Home</Link>
+               <Link to='about' smooth={true} offset={-50} duration={200} className='font-inter text-xl font-medium'>About</Link>
+               <Link to='project' smooth={true} offset={-70} duration={300} className='font-inter text-xl font-medium'>Project</Link>
+               <Link to='skill' smooth={true} offset={-100} duration={250} className='font-inter text-xl font-medium'>Skill</Link>
+               <Link to='contact' smooth={true} offset={-30} duration={350} className='font-inter text-xl font-medium'>Contact</Link>
             </div>
         </div>
     </div>

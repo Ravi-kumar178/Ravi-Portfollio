@@ -19,6 +19,10 @@ const contactSchema = new mongoose.Schema({
     contactNumber:{
         type:Number,
         required:true
+    },
+    message:{
+        type:String,
+        required:true,
     }
 })
 

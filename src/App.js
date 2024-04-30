@@ -9,7 +9,7 @@ import { Footer } from "./Component/Footer";
 
 function App() {
   return (
-    <div className="bg-richblack-900 w-screen min-h-screen">
+    <div className="bg-richblack-900  w-screen min-h-screen">
        <Navbar/>
        <Hero/>
        <About/>

@@ -3,9 +3,12 @@ const mailSender = require("../Config/mailSender");
 
 require("dotenv").config();
 exports.Contactus = async(req,res)=>{
+    console.log("API hitted");
+    
     try{
         const{firstName, lastName, email,contactNumber,message} = req.body;
-
+        console.log("firstName: ", firstName);
+        console.log(lastName);
         if(!firstName || !lastName || !email || !contactNumber){
             return res.status(404).json({
                 success: false,

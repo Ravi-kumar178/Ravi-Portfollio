@@ -3,6 +3,7 @@ import image from "../assets/openart-image_DUAq2sKA_1714451195305_raw-removebg-p
 import { BsGithub, BsTwitterX } from "react-icons/bs";
 import { FaArrowDown, FaArrowRight, FaLinkedin } from 'react-icons/fa6';
 import { SiLeetcode } from 'react-icons/si';
+import { Link } from 'react-scroll';
 
 export const Hero = () => {
 
@@ -30,10 +31,12 @@ export const Hero = () => {
                 </div>
 
                 <div className='flex items-center gap-x-6'>
-                    <button className='flex items-center gap-x-2 bg-richblack-700 hover:bg-richblack-5 hover:text-richblack-700 transition-all duration-200 py-2 px-4 rounded-md text-richblack-5 font-inter font-medium text-lg'>
-                        Contact me
-                        <FaArrowRight className='-mb-0.5'/>
-                    </button>
+                   <Link to='contact' smooth={true} offset={-80} duration={200}>
+                            <button className='flex items-center gap-x-2 bg-richblack-700 hover:bg-richblack-5 hover:text-richblack-700 transition-all duration-200 py-2 px-4 rounded-md text-richblack-5 font-inter font-medium text-lg'>
+                                Contact me
+                                <FaArrowRight className='-mb-0.5'/>
+                            </button>
+                   </Link>
 
                     <button 
                       className='flex items-center gap-x-2  bg-yellow-50 shadow-inner text-richblack-900  transition-all duration-200 py-2 px-4 rounded-md  font-inter font-medium text-lg'

@@ -9,6 +9,8 @@ export const ContactOpe = async(data) => {
     let toastId = toast.loading("Sending...");
     
     console.log("sending data: ", data);
+    console.log("first name in contact ope: ",data.firstName);
+    
    try{
      const result = await apiConnector("POST",CONTACT_ENDPOINT,data);
      toast.success("Message Sent");

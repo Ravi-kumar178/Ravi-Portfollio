@@ -7,7 +7,7 @@ export const Navbar = () => {
     <div className='bg-[#090d15] sticky top-0 border-b border-b-richblack-300'>
         <div className='w-11/12 mx-auto max-w-maxContent flex flex-row justify-around items-center'>
             <Link to='hero'  smooth={true} offset={-100} duration={150}>
-             <img src={logo} className='h-[80px]'/>
+             <img src={logo} alt='' className='h-[80px]'/>
             </Link>
             <div className='flex flex-row items-center gap-x-6 text-richblack-5'>
                <Link to='hero' smooth={true} offset={-100} duration={150} className='font-inter text-xl font-medium'>Home</Link>

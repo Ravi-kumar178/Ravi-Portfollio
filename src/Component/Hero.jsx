@@ -49,7 +49,7 @@ export const Hero = () => {
 
             </div>
             <div className='lg:w-[50%] w-[70%]'>
-                <img src={image}/>
+                <img src={image} alt=''/>
             </div>
         </div>
     </div>

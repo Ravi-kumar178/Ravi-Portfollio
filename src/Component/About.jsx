@@ -1,6 +1,6 @@
 import React from 'react'
 import { TypeAnimation } from 'react-type-animation'
-import { FaArrowDown, FaArrowRight, FaLinkedin } from 'react-icons/fa6';
+import { FaArrowDown, FaArrowRight } from 'react-icons/fa6';
 
 export const About = () => {
 

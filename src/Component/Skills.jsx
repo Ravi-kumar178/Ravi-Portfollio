@@ -1,6 +1,6 @@
 import React from 'react'
-import { FaNodeJs, FaReact } from 'react-icons/fa6'
-import { SiCss3, SiExpress, SiHtml5, SiJson, SiJsonwebtokens, SiMongodb, SiMongoose, SiNodemon, SiTailwindcss } from 'react-icons/si'
+
+import { SiCss3, SiExpress, SiHtml5, SiJson, SiJsonwebtokens,  SiMongoose, SiNodemon } from 'react-icons/si'
 import { TbBrandCpp, TbBrandJavascript, TbBrandReact, TbBrandTailwind, TbBrandMongodb, TbBrandNodejs } from 'react-icons/tb'
 
 

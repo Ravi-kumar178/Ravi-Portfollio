@@ -7,16 +7,16 @@ export const Contact = () => {
     const {handleSubmit,register,formState:{errors}} = useForm();
 
    async function onSubmitHandler(data){
-
+      console.log(data);
       const formData = new FormData();
       formData.append("firstName",data.firstName);
       formData.append("lastName",data.lastName);
       formData.append("email",data.email);
       formData.append("contactNumber",data.contactNumber);
       formData.append("message", data.message);
+
       
        try{
-            console.log(data);
             const response = await ContactOpe(formData); 
         }
        catch(err){

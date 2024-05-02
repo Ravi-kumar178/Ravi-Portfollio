@@ -5,17 +5,14 @@ import { apiConnector } from "../apiConnector"
 
 
 
-export const ContactOpe = async(data) => {
+export const ContactOpe = async(formData) => {
     let toastId = toast.loading("Sending...");
-    
-    console.log("sending data: ", data);
-    console.log("first name in contact ope: ",data.firstName);
+    console.log("sending data: ", formData);
     const headers = {
-      'Content-Type': 'multipart/form-data',
-      
+      'Content-Type': 'multipart/form-data', 
      }
    try{
-     const result = await apiConnector("POST",CONTACT_ENDPOINT,data,headers);
+     const result = await apiConnector("POST",CONTACT_ENDPOINT,formData,headers);
      toast.success("Message Sent");
      console.log("result: ",result);
    }

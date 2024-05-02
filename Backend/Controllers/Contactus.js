@@ -4,7 +4,7 @@ const mailSender = require("../Config/mailSender");
 require("dotenv").config();
 exports.Contactus = async(req,res)=>{
     console.log("API hitted");
-    
+    console.log("Request body: ",req.body);
     try{
         const{firstName, lastName, email,contactNumber,message} = req.body;
         console.log("firstName: ", firstName);

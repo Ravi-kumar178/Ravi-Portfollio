@@ -8,7 +8,7 @@ import { Link } from 'react-scroll';
 export const Hero = () => {
 
     const onButtonClick = () => {
-        const pdfUrl = "RAVI KUMAR.pdf";
+        const pdfUrl = "RAVI KUMAR New.pdf";
         const link = document.createElement("a");
         link.href = pdfUrl;
         link.download = "RAVI.pdf"; // specify the filename
@@ -31,7 +31,7 @@ export const Hero = () => {
                 </div>
 
                 <div className='flex items-center gap-x-6'>
-                   <Link to='contact' smooth={true} offset={-80} duration={200}>
+                   <Link to='contact'  smooth={true} offset={-80} duration={200}>
                             <button className='flex items-center gap-x-2 bg-richblack-700 hover:bg-richblack-5 hover:text-richblack-700 transition-all duration-200 py-2 px-4 rounded-md text-richblack-5 font-inter font-medium text-lg'>
                                 Contact me
                                 <FaArrowRight className='-mb-0.5'/>

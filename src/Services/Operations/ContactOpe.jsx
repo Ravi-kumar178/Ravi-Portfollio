@@ -10,9 +10,12 @@ export const ContactOpe = async(data) => {
     
     console.log("sending data: ", data);
     console.log("first name in contact ope: ",data.firstName);
-    
+    const headers = {
+      'Content-Type': 'multipart/form-data',
+      
+     }
    try{
-     const result = await apiConnector("POST",CONTACT_ENDPOINT,data);
+     const result = await apiConnector("POST",CONTACT_ENDPOINT,data,headers);
      toast.success("Message Sent");
      console.log("result: ",result);
    }

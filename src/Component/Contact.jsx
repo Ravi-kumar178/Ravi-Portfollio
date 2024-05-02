@@ -7,11 +7,17 @@ export const Contact = () => {
     const {handleSubmit,register,formState:{errors}} = useForm();
 
    async function onSubmitHandler(data){
+
+      const formData = new FormData();
+      formData.append("firstName",data.firstName);
+      formData.append("lastName",data.lastName);
+      formData.append("email",data.email);
+      formData.append("contactNumber",data.contactNumber);
+      formData.append("message", data.message);
       
        try{
             console.log(data);
-            const response = await ContactOpe(data);
-            console.log("response: ",response);  
+            const response = await ContactOpe(formData); 
         }
        catch(err){
         console.log("Error while sending message");
@@ -28,6 +34,7 @@ export const Contact = () => {
             </div>
             <div className='w-full'>
                 <form
+                 /* method='POST' */
                  onSubmit={handleSubmit(onSubmitHandler)}
                 className='w-full mx-auto flex flex-col gap-4 items-center'>
                     <div className='w-[70%] mx-auto flex md:flex-nowrap flex-wrap gap-4 items-center'>

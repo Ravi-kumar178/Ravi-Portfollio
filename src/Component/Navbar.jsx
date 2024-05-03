@@ -5,7 +5,7 @@ import './Navbar.css'
 
 export const Navbar = () => {
   return (
-    <div className='bg-[#090d15] sticky top-0 border-b border-b-richblack-300'>
+    <div className='z-10 bg-[#090d15] sticky top-0 border-b border-b-richblack-300'>
         <div className='w-11/12 mx-auto max-w-maxContent flex flex-row justify-center sm:justify-around items-center'>
             <Link to='hero'  smooth={true} offset={-100} duration={150}>
              <img src={logo} alt='' className='sm:block hidden h-[80px]'/>

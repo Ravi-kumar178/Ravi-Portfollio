@@ -29,7 +29,7 @@ export const Project = () => {
             title:"Ecomzy Store: E-commerce platform",
             description:"An efficient e-commerce platform offering diverse products and an exceptional user experience for global customers.",
             githubLinkFE:"https://github.com/Ravi-kumar178/Shopping-Cart",
-            liveLink:"https://657fffba8b2c2809f544e3d7--transcendent-basbousa-94bfc2.netlify.app/"
+            liveLink:"https://shopping-cart-tan-mu.vercel.app/"
         }
     ]
 

@@ -1,7 +1,7 @@
 import React from 'react'
 import img1 from "../assets/Screenshot (424).png"
 import img2 from "../assets/Screenshot (423).png"
-import img3 from "../assets/Screenshot (426).png"
+import img4 from '../assets/Screenshot (502).png'
 import { FaArrowRight } from 'react-icons/fa6'
 
 export const Project = () => {
@@ -17,20 +17,21 @@ export const Project = () => {
         },
         {
             id:2,
+            projectImage:img4,
+            title:"Forever – An E-Commerce Clothing",
+            description:"An efficient e-commerce platform offering diverse products and an exceptional user experience for global customers.",
+            githubLinkFE:"https://github.com/Ravi-kumar178/Forever-ECommerce",
+            liveLink:"https://forever-ecommerce-green.vercel.app/"
+        },
+        {
+            id:3,
             projectImage:img2,
             title:"Doctor's Convention",
             description:"An event organizing platform for doctors and healthcare workers to spread awareness in society regarding healthy lifestyles.",
             githubLinkFE:"https://github.com/Ravi-kumar178/myapp",
             liveLink:"https://6565b8a247d92e4f5285a1b9--neon-torte-314aa5.netlify.app/"
         },
-        {
-            id:3,
-            projectImage:img3,
-            title:"Ecomzy Store: E-commerce platform",
-            description:"An efficient e-commerce platform offering diverse products and an exceptional user experience for global customers.",
-            githubLinkFE:"https://github.com/Ravi-kumar178/Shopping-Cart",
-            liveLink:"https://shopping-cart-tan-mu.vercel.app/"
-        }
+
     ]
 
     

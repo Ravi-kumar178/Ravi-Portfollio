@@ -8,7 +8,7 @@ import { Link } from 'react-scroll';
 export const Hero = () => {
 
     const onButtonClick = () => {
-        const pdfUrl = "RAVI KUMAR New.pdf";
+        const pdfUrl = "RAVI KUMAR CV.pdf";
         const link = document.createElement("a");
         link.href = pdfUrl;
         link.download = "RAVI.pdf"; // specify the filename
